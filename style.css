@@ -1,0 +1,208 @@
+.slideshow-container {
+  max-width: fit-content; /* Set the maximum width of the slideshow */
+  margin: auto;
+  overflow: hidden; /* Hide any overflow */
+  height: 600px; /* Set a fixed height for the slideshow */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  position: relative;
+}
+/* Fade animation for the slides */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+/* CSS animation */
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Slide images */
+.mySlides img {
+  width: 100%; /* Ensure images fill the width of their container */
+  height: auto; /* Allow images to adjust their height proportionally */
+}
+
+  
+ 
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+/* headers  */
+
+
+
+
+
+.header-list{
+  margin-top: 12px;
+}
+
+.fs-4 {
+  color: rgb(122, 122, 122);
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: x-large;
+}
+
+
+.nav-item a{
+  color: grey;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.2rem;
+  
+}
+
+.nav-item :hover {
+  color: white;
+  background: grey;
+}
+
+/* logo  */
+
+.logo-container {
+  text-align: center;
+  
+}
+
+.intro-container{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin-top: 50px;
+
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  
+}
+
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+/* instagram */
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+
+/* packages page */
+
+.menu-pricing h1{
+  font-family: "Poppins", sans-serif;
+  color: grey;
+}
+
+.menu-container{
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: grey;
+}
+
+.menu-container h2{
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  margin-top: 15px;
+  color: grey;
+}
+
+.menu-container p{
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.7rem;
+  margin-top: 12px;
+  margin-bottom: 20px;
+  color: grey;
+}
+
+.menu-container btn btn-secondary{
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  margin-top: 12px;
+  color: grey;
+}
+
+.menu-image{
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+}
